@@ -1,0 +1,25 @@
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .headerMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+      }
+    }
+  }
+  .headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
