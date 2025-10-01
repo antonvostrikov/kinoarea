@@ -1,0 +1,45 @@
+.headerMovies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0 0;
+  .headerMoviesTitle {
+    position: relative;
+    h2 {
+      color: var(--white-color);
+      font-family: var(--font-qanelasBlack);
+      font-size: 65px;
+    }
+    &::after {
+      right: -150px;
+      content: "";
+      color: var(--white-color);
+      border-top: 2px solid var(--white-color);
+      width: 51px;
+      position: absolute;
+      top: 47px;
+    }   
+  }  
+  .headerMoviesList {
+    ul {
+      display: flex;
+      margin: 10px 0 0 0;
+      li {
+        list-style: none;
+        color: var(--white-color);
+        font-family: var(--font-qanelasBold);
+        font-size: 18px;
+        opacity: .35;
+        padding: 0 15px;
+        cursor: pointer;
+        &.active {
+          opacity: 1;
+        }
+        &:hover {
+          opacity: 1;
+          transition: .7s;
+        }
+      }
+    }
+  }
+}
