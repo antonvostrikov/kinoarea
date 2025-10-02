@@ -1,32 +1,28 @@
 import styles from './MovieItem.module.scss'
-import Image from 'next/image'
-
-type Genre = {
-  genre: string
-}
+import Image, { StaticImageData } from 'next/image'
 
 interface IMovieItem {
-  image: string
+  image: StaticImageData
   title: string
-  genre: Genre[]
+  genre: string[]
   rating: string
 }
 
 const MovieItem = ({ image, title, genre, rating }: IMovieItem) => {
-  console.log(genre)
 
   return (
     <div className={styles.movieItem}>
       <div className={styles.movieItemImage}>
-        <Image src={image} alt={title} />
-      </div>
+        <Image src={image} alt={title} width={340} height={462} />
+        <div className={styles.movieItemHover}>
+          <button>Карточка фильма</button>
+         </div>
+      </div> 
       <div className={styles.movieItemTitle}>
         <h5>{title}</h5>
-        <ul>
-          { genre.map((g, idx) => <li key={idx}>{g.genre}</li>) }
-        </ul>
+        <span>{ genre.join(', ') }</span>
       </div>      
-      <div className={styles.movieItemRating}></div>
+      <div className={styles.movieItemRating}>{rating}</div>
     </div>
   )
 }

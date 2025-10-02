@@ -1,0 +1,64 @@
+.movieItem {
+  position: relative;
+  width: 340px;
+  .movieItemImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      border-radius: 10px;
+    }
+    .movieItemHover {
+      position: absolute;
+      display: none;
+    }
+    &:hover {
+      background-color: rgb(54 87 203 / 0.65);
+      transition: .7s;
+      img {
+        z-index: -1;
+      }
+      .movieItemHover {
+        display: block;
+        button {
+          text-align: center;
+          margin: 0 auto;
+          width: 224px;
+          height: 71px;
+          background: var(--white-color);
+          border: none;
+          border-radius: 10px;
+          color: var(--blue-color);
+          font-size: 18px;
+          font-family: var(--font-qanelasBold);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .movieItemTitle {
+    padding: 10px 0;
+    h5 {
+      font-size: 18px;
+      font-family: var(--font-qanelasBold);
+      color: var(--white-color);
+      margin: 0 0 5px 0;
+    }
+    span {
+      font-family: var(--font-qanelasRegular);
+      color: var(--yellow-color);
+    }
+  }
+  .movieItemRating {
+    position: absolute;
+    font-family: var(--font-qanelasBold);
+    font-size: 18px;
+    color: var(--white-color);
+    top: 12px;
+    right: 12px;
+    background: var(--green-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}

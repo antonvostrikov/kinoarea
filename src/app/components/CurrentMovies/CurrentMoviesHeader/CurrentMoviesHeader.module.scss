@@ -32,6 +32,9 @@
         opacity: .35;
         padding: 0 15px;
         cursor: pointer;
+        &:last-child {
+          padding: 0 0 0 15px;
+        }
         &.active {
           opacity: 1;
         }
