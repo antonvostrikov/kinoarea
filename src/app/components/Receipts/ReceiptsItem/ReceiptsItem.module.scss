@@ -1,0 +1,37 @@
+.receiptsItem {
+  display: flex;
+  padding: 0 15px 0 0;
+  &:last-child {
+    padding: 0;
+  }
+  .receiptsImage {
+    padding: 0 10px 0 0;
+    img {
+      border-radius: 5px;
+      width: 95px;
+      height: 141px;
+    }
+  }
+  .receiptsDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+      color: var(--white-color);
+      font-size: 18px;
+      font-family: var(--font-qanelasBold);
+      margin: 0 0 10px 0;
+    }
+    .boxOffice {
+      font-size: 14px;
+      color: var(--yellow-color);
+      font-family: var(--font-qanelasMedium);
+      margin: 0 0 5px 0;
+    }
+    .boxOfficeTotal {
+      font-size: 14px;
+      color: var(--darkText-color);
+      font-family: var(--font-qanelasMedium);
+    }
+  }
+}

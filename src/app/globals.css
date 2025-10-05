@@ -21,5 +21,7 @@ a {
   --white-color: #fff;
   --yellow-color: #F2F60F;
   --green-color: #89CB36;
-  background: #151A26;
+  --lightBlue-color: #1E2538;
+  --darkBlue-color: #151A26;
+  --darkText-color: #6D717D;
 }

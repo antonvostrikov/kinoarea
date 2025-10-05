@@ -1,0 +1,36 @@
+.popularPeopleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .popularTitle {
+    h2 {
+      font-family: var(--font-qanelasBlack);
+      color: var(--white-color);
+      font-size: 65px;
+    }
+  }
+  .popularListDate {
+    padding: 20px 0 0 ;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        font-size: 18px;
+        font-family: var(--font-qanelasBold);
+        color: var(--darkText-color);
+        margin: 0 30px;
+        cursor: pointer;
+        &:hover {
+          color: var(--white-color);
+          transition: .7s;
+        }
+        &:last-child {
+          margin: 0 0 0 30px;
+        }
+        &.active {
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+}

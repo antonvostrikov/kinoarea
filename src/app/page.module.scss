@@ -1,0 +1,9 @@
+.page {
+  position: relative;
+  .pageTop {
+    background: var(--lightBlue-color);
+  }
+  .pageBottom {
+    background: var(--darkBlue-color);
+  }
+}

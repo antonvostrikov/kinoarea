@@ -1,4 +1,6 @@
 .sectionCurrentMovies {
+  min-height: 850px;
+  padding: 10px 0;
   .moviesWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

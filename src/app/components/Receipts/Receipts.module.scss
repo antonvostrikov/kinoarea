@@ -1,0 +1,10 @@
+.receiptsSection {
+  min-height: 270px;
+  padding: 105px 0 95px 0;
+  .receiptsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0 0 0;
+  }
+}
