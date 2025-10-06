@@ -1,7 +1,18 @@
 .popularPeopleSection {
   min-height: 590px;
+  padding: 0 0 65px 0;
   .popularPeopleWrapper {
     display: flex;
+    justify-content: space-between;
+    padding: 60px 0 0 0;
+  }
+  .popularPeopleOther {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #1B2133;
+    border-radius: 10px;
+    padding: 30px;
     justify-content: space-between;
   }
 }

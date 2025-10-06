@@ -1,7 +1,7 @@
-import styles from './PopularOther.module.scss'
+import styles from './PopularOtherItem.module.scss'
 
 interface IPopularOtherItem {
-  id: string
+  id: number
   nameRu: string
   nameEng: string
   top: string
@@ -11,7 +11,14 @@ interface IPopularOtherItem {
 const PopularOtherItem = ({ nameRu, nameEng, top, age }: IPopularOtherItem) => {
   return (
     <div className={styles.popularOtherItem}>
-      
+      <div className={styles.itemLeft}>
+        <h4>{nameRu}</h4>
+        <h5>{nameEng}</h5>
+        <span>{age}</span>
+      </div>
+      <div className={styles.itemRight}>
+        <span>{top}</span>
+      </div>
     </div>
   )
 }

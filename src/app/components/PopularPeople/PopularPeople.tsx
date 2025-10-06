@@ -4,6 +4,7 @@ import PopularPeopleHeader from './PopularPeopleHeader/PopularPeopleHeader'
 import TarantinoImage from '../../../../public/images/popularPeople/tarantino.jpg'
 import StathamImage from '../../../../public/images/popularPeople/statham.jpg'
 import PopularItem from './PopularItem/PopularItem'
+import PopularOtherItem from './PopularOther/PopularOtherItem'
 
 const people = [
   { 
@@ -58,7 +59,10 @@ const PopularPeople = () => {
       <Container>
         <PopularPeopleHeader />
         <div className={styles.popularPeopleWrapper}>
-          { people.slice(0, 2).map(item => <PopularItem {...item} />) }
+          { people.slice(0, 2).map(item => <PopularItem key={item.id} {...item} />) }
+          <div className={styles.popularPeopleOther}>
+            { people.slice(2, 6).map(item => <PopularOtherItem key={item.id} {...item} /> ) }
+          </div>
         </div>
       </Container>
     </section>

@@ -1,0 +1,40 @@
+.popularItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 444px;
+  border-radius: 10px;
+  margin: 0 30px 0 0;
+  box-shadow: 0px -40px 400px 0px rgba(0, 0, 0, 0.25) inset;
+  .popularItemTop {
+    padding: 15px 15px 0 15px;
+    span {
+      color: var(--yellow-color);
+      font-size: 14px;
+      font-family: var(--font-qanelasMedium);
+    }
+  }
+  .popularItemBottom {
+    padding: 0 30px 30px 30px;
+    h4 {
+      font-family: var(--font-qanelasBold);
+      font-size: 27px;
+      color: var(--white-color);
+      margin: 0 0 5px 0;
+    }
+    h5 {
+      font-family: var(--font-qanelasSemiBold);
+      font-size: 20px;
+      color: var(--darkText-color);
+      margin: 0 0 10px 0;
+    }
+    span {
+      color: var(--yellow-color);
+      font-size: 14px;
+      font-family: var(--font-qanelasMedium);
+    }
+  }
+}

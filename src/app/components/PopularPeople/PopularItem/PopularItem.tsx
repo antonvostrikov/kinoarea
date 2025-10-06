@@ -11,7 +11,7 @@ interface IPopularItem {
 
 const PopularItem = ({ top, nameRu, nameEng, age, image }: IPopularItem) => {
   return (
-    <div className={styles.popularItem}>
+    <div className={styles.popularItem} style={{ backgroundImage: `url(${image && image.src})` }}>
       <div className={styles.popularItemTop}>
         <span>{top}</span>
       </div>

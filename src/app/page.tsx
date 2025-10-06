@@ -13,8 +13,8 @@ export default function Home() {
     <div className={styles.page}>
       <div className={styles.pageTop}>
         <CurrentMovies />
-        <LastNews />
         <PopularPeople />
+        <LastNews />
       </div>
       <div className={styles.pageBottom}>
         <Receipts />
